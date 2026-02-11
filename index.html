@@ -391,10 +391,17 @@ const validVip = ["1","2","3"];
 
 if(vipParam && validVip.includes(vipParam)){
   document.getElementById("loginScreen").remove();
+
+  const vipAdmin = document.querySelector(".vip-admin");
+  if(vipAdmin){
+    vipAdmin.style.display = "none";
+  }
+
 } else if(vipParam){
   alert("Link VIP không hợp lệ hoặc đã bị thu hồi!");
   window.location.href = window.location.pathname;
 }
+
 
 
   
