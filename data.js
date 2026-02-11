@@ -49,6 +49,7 @@ const data = [
   {code:"KLMBG8FE4B-B001", mmc:"MMC2"},
   {code:"KLUBG4G1BD-E0B1", mmc:"MMC2"},
   {code:"KLUBG4G1BD-E0B2", mmc:"MMC2"},
+  {code:"THGBMUG8C2LBAIL", mmc:"MMC2"},
   {code:"KLUBG4G1BE-E0B1", mmc:"MMC2"},
   {code:"KLUBG4G1CE-B0B1", mmc:"MMC2"},
   {code:"KLUBG4WEBD-B031", mmc:"MMC2"},
