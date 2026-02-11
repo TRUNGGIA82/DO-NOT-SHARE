@@ -187,7 +187,12 @@ z-index:9999;
     <button onclick="secureLogin()" 
     style="margin-top:15px;width:100%;padding:12px;border-radius:10px;background:gold;font-weight:bold;">
       LOGIN
-    </button>
+      </button>
+    <button onclick="resetPass()" 
+style="margin-top:8px;width:100%;padding:10px;border-radius:10px;background:#444;color:white;">
+  Quên mật khẩu
+</button>
+
     <div id="loginError" style="color:red;text-align:center;margin-top:10px;"></div>
   </div>
 </div>
@@ -266,6 +271,24 @@ function secureLogin(){
     })
     .catch(() => {
       document.getElementById("loginError").innerText = "Sai Gmail hoặc Password!";
+    });
+}
+function resetPass(){
+  const email = document.getElementById("loginEmail").value;
+
+  if(!email){
+    document.getElementById("loginError").innerText = "Nhập Gmail trước!";
+    return;
+  }
+
+  auth.sendPasswordResetEmail(email)
+    .then(()=>{
+      document.getElementById("loginError").style.color="lime";
+      document.getElementById("loginError").innerText = "Đã gửi email reset!";
+    })
+    .catch((error)=>{
+      document.getElementById("loginError").style.color="red";
+      document.getElementById("loginError").innerText = error.message;
     });
 }
 
