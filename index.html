@@ -217,30 +217,27 @@ style="margin-top:8px;width:100%;padding:10px;border-radius:10px;background:#444
     <button onclick="check()">CHECK</button>
   </div>
 
-<div class="info-card">
-  <div class="info-warning">
-    ⚠ Tool chỉ mang tính tham khảo, không đảm bảo chính xác tuyệt đối 100%.
-  </div>
-
-  <div class="info-donate">
-    Anh em cảm thấy hay có thể donate ☕ để phát triển thêm.
-  </div>
-
-  <div class="info-bank">
-    🏦 Vietcombank | Nguyen Minh Trung<br>
-    STK: <strong>9907373199</strong>
-  </div>
-
-  <div class="info-contact">
-    📱 Liên hệ: Telegram – 0907373199
-  </div>
-</div>
-
-</div>
-
-
-
   <div id="out"></div>
+
+  <div class="info-card">
+    <div class="info-warning">
+      ⚠ Tool chỉ mang tính tham khảo, không đảm bảo chính xác tuyệt đối 100%.
+    </div>
+
+    <div class="info-donate">
+      Anh em cảm thấy hay có thể donate ☕ để phát triển thêm.
+    </div>
+
+    <div class="info-bank">
+      🏦 Vietcombank | Nguyen Minh Trung<br>
+      STK: <strong>9907373199</strong>
+    </div>
+
+    <div class="info-contact">
+      📱 Liên hệ: Telegram – 0907373199
+    </div>
+  </div>
+
 </div>
 
 <script src="data.js"></script>
@@ -273,6 +270,7 @@ function secureLogin(){
       document.getElementById("loginError").innerText = "Sai Gmail hoặc Password!";
     });
 }
+
 function resetPass(){
   const email = document.getElementById("loginEmail").value;
 
@@ -302,6 +300,7 @@ if(vipParam){
     vipBox.style.display = "none";
   }
 }
+
 
 auth.onAuthStateChanged(function(user){
   if(user){
