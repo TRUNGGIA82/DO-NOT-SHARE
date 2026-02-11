@@ -337,21 +337,7 @@ auth.onAuthStateChanged(function(user){
   }
 });
 
-function copyVipSelected(){
-  const level = document.getElementById("vipSelect").value;
-  const link = window.location.origin + window.location.pathname + "?vip=" + level;
 
-  navigator.clipboard.writeText(link).then(()=>{
-    const btn = document.querySelector(".vip-box button");
-    btn.innerText = "✔ ĐÃ COPY";
-    btn.style.background="#16a34a";
-
-    setTimeout(()=>{
-      btn.innerText = "COPY LINK";
-      btn.style.background="linear-gradient(45deg,#FFD700,#ffb700)";
-    },2000);
-  });
-}
 
 const q = document.getElementById("q");
 const out = document.getElementById("out");
