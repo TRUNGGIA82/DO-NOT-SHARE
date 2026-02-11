@@ -306,17 +306,28 @@ function resetPass(){
 const params = new URLSearchParams(window.location.search);
 const vipParam = params.get("vip");
 
-if(vipParam){
+const validVip = ["1","2","3"]; // VIP được phép
+
+if(vipParam && validVip.includes(vipParam)){
   document.getElementById("loginScreen").remove();
+
   const vipBox = document.querySelector(".vip-box");
   if(vipBox){
     vipBox.style.display = "none";
   }
+
+} else if(vipParam){
+  alert("Link VIP không hợp lệ hoặc đã bị thu hồi!");
+  window.location.href = window.location.pathname;
 }
 
 
 auth.onAuthStateChanged(function(user){
-  if(user){
+  const params = new URLSearchParams(window.location.search);
+  const vipParam = params.get("vip");
+  const validVip = ["1","2","3"]; // VIP được phép
+
+  if(user || (vipParam && validVip.includes(vipParam))){
     document.getElementById("loginScreen").remove();
   }
 });
