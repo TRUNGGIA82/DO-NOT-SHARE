@@ -215,41 +215,32 @@ style="margin-top:8px;width:100%;padding:10px;border-radius:10px;background:#444
     </marquee>
   </div>
 
+<div class="vip-admin" style="margin-bottom:25px;">
+  <div style="font-weight:700;margin-bottom:10px;">👑 TẠO LINK VIP</div>
 
-  <div class="vip-box">
-    <select id="vipSelect">
-      <option value="1">VIP 1</option>
-      <option value="2">VIP 2</option>
-      <option value="3">VIP 3</option>
-      <option value="4">VIP 4</option>
-      <option value="5">VIP 5</option>
-    </select>
-    <button onclick="copyVipSelected()">COPY LINK</button>
+  <div style="display:flex;gap:10px;">
+    <button onclick="copyVipLink(1)" class="vip-btn">VIP 1</button>
+    <button onclick="copyVipLink(2)" class="vip-btn">VIP 2</button>
+    <button onclick="copyVipLink(3)" class="vip-btn">VIP 3</button>
   </div>
-
-  <div class="check-box">
-    <input id="q" placeholder="Nhập mã cần kiểm tra">
-    <button onclick="check()">CHECK</button>
-  </div>
-
-  <div id="out"></div>
-
-  <div class="info-card">
-
-
-    <div class="info-donate">
-      Anh em cảm thấy hay có thể donate ☕ để phát triển thêm.
-    </div>
-
-<div class="info-bank" style="color:#ccc;font-weight:normal;">
-  🏦 vietcombank | NGUYEN MINH TRUNG | STK: 9907373199.
 </div>
 
+<div id="out"></div>
 
-    <div class="info-contact">
-      📱 Liên hệ: Telegram – 0907373199
-    </div>
+<div class="info-card">
+
+  <div class="info-donate">
+    Anh em cảm thấy hay có thể donate ☕ để phát triển thêm.
   </div>
+
+  <div class="info-bank" style="color:#ccc;font-weight:normal;">
+    🏦 vietcombank | NGUYEN MINH TRUNG | STK: 9907373199.
+  </div>
+
+  <div class="info-contact">
+    📱 Liên hệ: Telegram – 0907373199
+  </div>
+</div>
 
 </div>
 
@@ -303,24 +294,38 @@ function resetPass(){
     });
 }
 
+function copyVipLink(level){
+  const link = window.location.origin + window.location.pathname + "?vip=" + level;
+
+  navigator.clipboard.writeText(link).then(()=>{
+    const btns = document.querySelectorAll(".vip-btn");
+    btns.forEach(b => b.classList.remove("copied"));
+
+    const activeBtn = event.target;
+    activeBtn.classList.add("copied");
+    activeBtn.innerText = "✔ ĐÃ COPY";
+
+    setTimeout(()=>{
+      activeBtn.classList.remove("copied");
+      activeBtn.innerText = "VIP " + level;
+    },2000);
+  });
+}
+
 const params = new URLSearchParams(window.location.search);
 const vipParam = params.get("vip");
 
-const validVip = ["1","2","3"]; // VIP được phép
+const validVip = ["1","2","3"];
 
 if(vipParam && validVip.includes(vipParam)){
   document.getElementById("loginScreen").remove();
-
-  const vipBox = document.querySelector(".vip-box");
-  if(vipBox){
-    vipBox.style.display = "none";
-  }
-
 } else if(vipParam){
   alert("Link VIP không hợp lệ hoặc đã bị thu hồi!");
   window.location.href = window.location.pathname;
 }
 
+
+  
 
 auth.onAuthStateChanged(function(user){
   const params = new URLSearchParams(window.location.search);
