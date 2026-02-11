@@ -369,19 +369,20 @@ function copyVipLink(level){
   const link = window.location.origin + window.location.pathname + "?vip=" + level;
 
   navigator.clipboard.writeText(link).then(()=>{
-    const btns = document.querySelectorAll(".vip-btn");
-    btns.forEach(b => b.classList.remove("copied"));
+    const btn = document.querySelector(`button[onclick="copyVipLink(${level})"]`);
 
-    const activeBtn = event.target;
-    activeBtn.classList.add("copied");
-    activeBtn.innerText = "✔ ĐÃ COPY";
+    btn.classList.add("copied");
+    btn.innerText = "✔ ĐÃ COPY";
 
     setTimeout(()=>{
-      activeBtn.classList.remove("copied");
-      activeBtn.innerText = "VIP " + level;
-    },2000);
+      btn.classList.remove("copied");
+      btn.innerText = "VIP " + level + " 📋";
+    },1500);
+  }).catch(()=>{
+    alert("Không thể copy tự động!");
   });
 }
+
 
 const params = new URLSearchParams(window.location.search);
 const vipParam = params.get("vip");
