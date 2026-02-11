@@ -41,7 +41,12 @@ const data = [
   {code:"H28U64222MMR", mmc:"MMC2"},
   {code:"H2MU64122MAR", mmc:"MMC2"},
   {code:"KLMBG2JENB-B041", mmc:"MMC2"},
-  {code:"KLMBG2JETD-B041", mmc:"MMC2"},
+  { 
+  code:"KLMBG2JETD-B041", 
+  mmc:"MMC2",
+  model:["A530","J600","A600"]
+},
+
   {code:"KLMBG4GEAC-B001", mmc:"MMC2"},
   {code:"KLMBG4GEND-B031", mmc:"MMC2"},
   {code:"KLMBG4WEBC-B031", mmc:"MMC2"},
@@ -49,7 +54,12 @@ const data = [
   {code:"KLMBG8FE4B-B001", mmc:"MMC2"},
   {code:"KLUBG4G1BD-E0B1", mmc:"MMC2"},
   {code:"KLUBG4G1BD-E0B2", mmc:"MMC2"},
-  {code:"THGBMUG8C2LBAIL", mmc:"MMC2"},
+  { 
+  code:"THGBMUG8C2LBAIL",
+  mmc:"MMC2",
+  model:["J7 PRIME"]
+},
+
   {code:"KLUBG4G1BE-E0B1", mmc:"MMC2"},
   {code:"KLUBG4G1CE-B0B1", mmc:"MMC2"},
   {code:"KLUBG4WEBD-B031", mmc:"MMC2"},
@@ -79,7 +89,12 @@ const data = [
   {code:"H28S7Q302BMR", mmc:"MMC3"},
   {code:"H28U74301AMR", mmc:"MMC3"},
   {code:"H28U74303AMR", mmc:"MMC3"},
-  {code:"KLMCG2KETM-B041", mmc:"MMC3"},
+  { 
+  code:"KLMCG2KETM-B041", 
+  mmc:"MMC3",
+  model:["A730"]
+},
+
   {code:"KLMCG2KСТА-В041", mmc:"MMC3"},
   {code:"KLMCG2UCTA-B041", mmc:"MMC3"},
   {code:"KLMCG4JENB-B041", mmc:"MMC3"},
@@ -232,7 +247,12 @@ const data = [
   {code:"KMQ310013M-B419", vip:"VIP 4"},
   {code:"KMQ820013M-B419", vip:"VIP 4"},
   {code:"KMQE10013M-B318", vip:"VIP 4"},
-  {code:"KMQE600013M-B318", vip:"VIP 4"},
+  { 
+  code:"KMQE600013M-B318",
+  vip:"VIP 4",
+  model:["J4 PLUS"]
+},
+
   {code:"KMR310001M-B611", vip:"VIP 4"},
   {code:"KMR820001M-B609", vip:"VIP 4"},
   {code:"H9TQ17ADFTACUR", vip:"VIP 4"},
@@ -273,14 +293,24 @@ const data = [
   {code:"KMDX60018M-B425", vip:"VIP 5"},
   {code:"KMGD6001BM-B421", vip:"VIP 5"},
   {code:"KMGP6001BM-B514", vip:"VIP 5"},
-  {code:"KMGX6001BA-B514", vip:"VIP 5"},
+  { 
+  code:"KMGX6001BA-B514",
+  vip:"VIP 5",
+  model:["J6 PLUS"]
+},
+
   {code:"KMGX6001BM-B514", vip:"VIP 5"},
   {code:"KMR21000BM-8809", vip:"VIP 5"},
   {code:"KMRC1000BM-B809", vip:"VIP 5"},
   {code:"KMRD60014M-B512", vip:"VIP 5"},
   {code:"KMRX1000BM-B614", vip:"VIP 5"},
   {code:"KMRX10014M-B614", vip:"VIP 5"},
-  {code:"KMRX60014M-B614", vip:"VIP 5"},
+  { 
+  code:"KMRX60014M-B614",
+  vip:"VIP 5",
+  model:["A6 PLUS"]
+},
+
   {code:"SDADA4CR-64G", vip:"VIP 5"},
   {code:"SDADA4DR-64G", vip:"VIP 5"},
   {code:"JZ049", vip:"VIP 5"},
