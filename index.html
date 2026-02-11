@@ -500,13 +500,21 @@ function check(){
             </div>
           `:""}
 
-          ${x.vip?`
-            <div class="badge ${getVipClass(x.vip)}">
-              👑 ${x.vip}
-            </div>
-          `:""}
-        </div>
-      `;
+${x.vip?`
+  <div class="badge ${getVipClass(x.vip)}">
+    👑 ${x.vip}
+  </div>
+`:""}
+
+${x.model?`
+  <div class="badge" style="background:#22c55e;color:black;">
+    📱 ${x.model.join(", ")}
+  </div>
+`:""}
+
+</div>
+`;
+
     }
   });
 
