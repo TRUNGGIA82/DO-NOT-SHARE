@@ -521,9 +521,30 @@ ${x.vip?`
 
 ${x.model?`
   <div class="badge" style="background:#22c55e;color:black;">
-    📱 ${x.model.join(", ")}
+    📱 ${
+      (function(){
+        let brand = "";
+        let models = x.model.map(m => {
+
+          if(m.includes("SAMSUNG")) brand = "SAMSUNG";
+          if(m.includes("OPPO")) brand = "OPPO";
+          if(m.includes("VIVO")) brand = "VIVO";
+
+          return m
+            .replace("SAMSUNG ","")
+            .replace("OPPO ","")
+            .replace("VIVO ","")
+            .replace(/\s\d+GB/i,"")
+            .toUpperCase();
+        });
+
+        return brand + " " + models.join(" / ");
+      })()
+    }
   </div>
 `:""}
+
+
 
 </div>
 `;
