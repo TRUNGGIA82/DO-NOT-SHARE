@@ -4,46 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>CHECK VIP</title>
-
 <style>
-.vip-box{
-  display:flex;
-  gap:10px;
-  margin-bottom:18px;
-}
 
-.vip-box select{
-  flex:1;
-  padding:14px;
-  border-radius:50px;
-  border:1px solid rgba(255,215,0,0.3);
-  background:#111;
-  color:white;
-  font-size:14px;
-}
-
-.vip-box button{
-  flex:1;
-}
-
+/* ===== BODY ===== */
 body{
   margin:0;
   font-family:Segoe UI,Roboto,Arial;
   background:radial-gradient(circle at top,#111,#000);
   color:#f1f5f9;
-
-  display:flex;
-  flex-direction:column;
-  min-height:100vh;
-}
-#out{
-  display:grid;
-  grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
-  gap:14px;
-  margin-top:20px;
 }
 
+/* ===== CONTAINER ===== */
+.container{
+  max-width:1100px;
+  margin:20px auto 40px;
+  padding:0 14px;
+}
 
+/* ===== TITLE ===== */
 .title{
   text-align:center;
   font-size:22px;
@@ -54,6 +32,7 @@ body{
   -webkit-text-fill-color:transparent;
 }
 
+/* ===== INPUT ===== */
 input{
   width:100%;
   padding:14px;
@@ -66,6 +45,7 @@ input{
   box-sizing:border-box;
 }
 
+/* ===== BUTTON ===== */
 button{
   width:100%;
   padding:14px;
@@ -80,19 +60,36 @@ button{
   box-sizing:border-box;
 }
 
-.check-box{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
+button:hover{
+  transform:scale(1.02);
 }
 
-.disclaimer{
-  margin-top:8px;
-  font-size:11px;
-  opacity:0.6;
-  text-align:center;
+/* ===== CHECK INLINE ===== */
+.check-inline{
+  position:relative;
+  width:100%;
+  margin-top:10px;
 }
 
+.check-inline input{
+  padding:14px 50px 14px 14px;
+}
+
+.check-icon{
+  position:absolute;
+  right:8px;
+  top:50%;
+  transform:translateY(-50%);
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  border:none;
+  background:linear-gradient(45deg,#FFD700,#ffb700);
+  cursor:pointer;
+  font-size:18px;
+}
+
+/* ===== GRID RESULT ===== */
 #out{
   display:grid;
   grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
@@ -100,7 +97,7 @@ button{
   margin-top:20px;
 }
 
-
+/* ===== ITEM CARD ===== */
 .item{
   background:linear-gradient(145deg,#0e0e0e,#181818);
   border-radius:18px;
@@ -108,33 +105,86 @@ button{
   border:1px solid rgba(255,215,0,0.15);
 }
 
+/* ===== BADGE ===== */
 .badge{
   display:inline-flex;
   align-items:center;
   gap:4px;
   padding:4px 12px;
   border-radius:999px;
-  font-size:10px;
+  font-size:11px;
   font-weight:800;
   margin-top:6px;
 }
 
+/* ===== CLASS COLOR SYSTEM ===== */
 
-  .vip-5{ background:#facc15; color:black; }
-.vip-6{ background:linear-gradient(90deg,#facc15,#fb923c); color:black; }
-.vip-7{ background:linear-gradient(90deg,#fb923c,#ef4444); color:white; }
-.vip-8{ background:linear-gradient(90deg,#6d28d9,#a855f7); color:white; }
-.vip-9{ background:linear-gradient(90deg,#06b6d4,#0ea5e9); color:white; }
-.vip-10{ background:linear-gradient(90deg,#FFD700,#ffcc00,#FFD700); color:black; }
-.vip-11{ background:linear-gradient(90deg,#ff4d00,#ff0000); color:white; }
-.vip-13{ background:linear-gradient(90deg,#5b0000,#ff0000,#5b0000); color:white; }
+/* CLASS 1 */
+.vip-1{
+  background:#111;
+  color:#fff;
+  border:1px solid #333;
+}
+
+/* CLASS 2–4 */
+.vip-2,
+.vip-3,
+.vip-4{
+  background:#2b2b2b;
+  color:#ccc;
+}
+
+/* CLASS 5 */
+.vip-5{
+  background:linear-gradient(90deg,#1e3c72,#2a5298);
+  color:#fff;
+  font-weight:600;
+}
+
+/* CLASS 6 */
+.vip-6{
+  background:linear-gradient(90deg,#2563eb,#3b82f6);
+  color:#fff;
+  font-weight:600;
+}
+
+/* CLASS 7 */
+.vip-7{
+  background:linear-gradient(90deg,#7c3aed,#a855f7);
+  color:#fff;
+  font-weight:700;
+}
+
+/* CLASS 8 */
+.vip-8{
+  background:linear-gradient(90deg,#db2777,#f43f5e);
+  color:#fff;
+  font-weight:700;
+}
+
+/* CLASS 9 – đẹp nhất */
+.vip-9{
+  background:linear-gradient(90deg,#facc15,#f59e0b);
+  color:#000;
+  font-weight:800;
+}
+
+/* CLASS 10+ */
+.vip-10,
+.vip-11,
+.vip-12,
+.vip-13{
+  background:#444;
+  color:#fff;
+}
+
+/* ===== INFO CARD ===== */
 .info-card{
   margin-top:20px;
   padding:18px;
   border-radius:18px;
   background:linear-gradient(145deg,#0e0e0e,#1a1a1a);
   border:1px solid rgba(255,215,0,0.15);
-  box-shadow:0 0 20px rgba(255,215,0,0.05);
   text-align:center;
 }
 
@@ -162,77 +212,10 @@ button{
   font-size:12px;
   opacity:0.6;
 }
-.check-inline{
-  position:relative;
-  width:100%;
-  margin-top:10px;
-}
-
-.check-inline input{
-  width:100%;
-  padding:14px 50px 14px 14px; /* chừa chỗ bên phải cho icon */
-  border-radius:50px;
-  border:1px solid rgba(255,215,0,0.3);
-  background:#111;
-  color:white;
-  font-size:15px;
-}
-
-.check-icon{
-  position:absolute;
-  right:8px;
-  top:50%;
-  transform:translateY(-50%);
-  width:40px;
-  height:40px;
-  border-radius:50%;
-  border:none;
-  background:linear-gradient(45deg,#FFD700,#ffb700);
-  cursor:pointer;
-  font-size:18px;
-}
-.check-icon:hover{
-  transform:translateY(-50%) scale(1.1);
-  box-shadow:0 0 10px rgba(255,215,0,0.6);
-}
-
-.vip-btn{
-  flex:1;
-  padding:10px;
-  border-radius:12px;
-  font-size:14px;
-  font-weight:700;
-  background:linear-gradient(45deg,#FFD700,#ffb700);
-  transition:0.2s;
-}
-
-.vip-btn:hover{
-  transform:translateY(-2px);
-  box-shadow:0 6px 15px rgba(255,215,0,0.4);
-}
-
-.vip-btn.copied{
-  background:#16a34a !important;
-  color:white;
-}
-.vip-btn{
-  flex:1;
-  width:auto;              /* ghi đè width:100% */
-  padding:10px 0;
-  border-radius:12px;
-  font-size:14px;
-  font-weight:700;
-  background:linear-gradient(45deg,#FFD700,#ffb700);
-  transition:0.2s;
-}
-.container{
-  flex:1;
-  max-width:1100px;
-  margin:20px auto 40px;
-  padding:0 14px;
-}
 
 </style>
+
+
 </head>
 
 <body>
