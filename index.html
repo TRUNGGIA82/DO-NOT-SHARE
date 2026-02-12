@@ -266,16 +266,27 @@ justify-content:center;
 align-items:center;
 z-index:9999;
 ">
-  <div style="width:360px;background:#111;padding:30px;border-radius:20px;border:1px solid gold;">
-    <h2 style="text-align:center;color:gold;">🔐 Tool Ve Chai Admin</h2>
-    <input id="loginEmail" type="email" placeholder="Nhập Gmail"
-    style="margin-top:15px;width:100%;padding:12px;border-radius:10px;border:none;background:#222;color:white;">
+<div style="width:360px;background:#111;padding:30px;border-radius:20px;border:1px solid gold;">
+  <h2 style="text-align:center;color:gold;">🔐 Tool Ve Chai Admin</h2>
+
+  <input id="loginEmail" type="email" placeholder="Nhập Gmail"
+  style="margin-top:15px;width:100%;padding:12px;border-radius:10px;border:none;background:#222;color:white;">
+
+  <div style="position:relative;margin-top:10px;">
     <input id="loginPass" type="password" placeholder="Nhập Password"
-    style="margin-top:10px;width:100%;padding:12px;border-radius:10px;border:none;background:#222;color:white;">
-    <button onclick="secureLogin()" 
-    style="margin-top:15px;width:100%;padding:12px;border-radius:10px;background:gold;font-weight:bold;">
-      LOGIN
-      </button>
+    style="width:100%;padding:12px 45px 12px 12px;border-radius:10px;border:none;background:#222;color:white;box-sizing:border-box;">
+    
+    <span onclick="togglePass()" 
+    style="position:absolute;right:12px;top:50%;transform:translateY(-50%);cursor:pointer;font-size:16px;opacity:0.7;">
+      👁
+    </span>
+  </div>
+
+  <button onclick="secureLogin()" 
+  style="margin-top:15px;width:100%;padding:12px;border-radius:10px;background:gold;font-weight:bold;">
+    LOGIN
+  </button>
+
     <button onclick="resetPass()" 
 style="margin-top:8px;width:100%;padding:10px;border-radius:10px;background:#444;color:white;">
   Quên mật khẩu
@@ -340,6 +351,18 @@ style="margin-top:8px;width:100%;padding:10px;border-radius:10px;background:#444
 <script src="data.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+function togglePass(){
+  const passInput = document.getElementById("loginPass");
+  const icon = event.target;
+
+  if(passInput.type === "password"){
+    passInput.type = "text";
+    icon.textContent = "🙈";
+  } else {
+    passInput.type = "password";
+    icon.textContent = "👁";
+  }
+}
 
 <script>
 const firebaseConfig = {
