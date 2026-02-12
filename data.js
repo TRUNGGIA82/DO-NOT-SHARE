@@ -335,7 +335,7 @@ const data = [
   {code:"JZ178", vip:"VIP 7"},
   {code:"H9HQ15AECMAD-KEM", vip:"VIP 7"},
   {code:"KM8V7001JA-B813", vip:"VIP 8"},
-{code:"KM8V7001UM-B810", vip:"VIP 8"},
+{code:"KM8V7001JM-B810", vip:"VIP 8"},
 {code:"KM8V8001JM-B811", vip:"VIP 8"},
 {code:"KM8V9001JM-B813", vip:"VIP 8"},
 {code:"KM8L9001JM-B624", vip:"VIP 8"},
