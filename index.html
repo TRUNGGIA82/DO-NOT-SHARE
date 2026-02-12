@@ -79,17 +79,25 @@ input{
 
 .check-icon{
   position:absolute;
-  right:8px;
+  right:10px;
   top:50%;
   transform:translateY(-50%);
-  width:40px;
-  height:40px;
+  width:34px;
+  height:34px;
   border-radius:50%;
-  border:none;
-  background:linear-gradient(45deg,#FFD700,#ffb700);
+  border:1px solid rgba(255,255,255,0.1);
+  background:#111;
+  color:#aaa;
   cursor:pointer;
-  font-size:18px;
+  font-size:15px;
+  transition:0.2s;
 }
+
+.check-icon:hover{
+  border-color:#facc15;
+  color:#facc15;
+}
+
 
 /* ===== GRID RESULT ===== */
 #out{
