@@ -513,7 +513,8 @@ data.forEach(function(x){
 
 ${x.vip?`
   <div class="badge ${getVipClass(x.vip)}">
-    👑 ${x.vip}
+   💾 ${x.vip.replace("VIP","CLASS")}
+
   </div>
 `:""}
 
