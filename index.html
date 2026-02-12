@@ -98,10 +98,11 @@ button{
 
 #out{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
   gap:14px;
   margin-top:20px;
 }
+
 
 .item{
   background:linear-gradient(145deg,#0e0e0e,#181818);
@@ -121,11 +122,7 @@ button{
   margin-top:6px;
 }
 
-@media(min-width:768px){
-  #out{
-    grid-template-columns:repeat(3,1fr);
-  }
-}
+
   .vip-5{ background:#facc15; color:black; }
 .vip-6{ background:linear-gradient(90deg,#facc15,#fb923c); color:black; }
 .vip-7{ background:linear-gradient(90deg,#fb923c,#ef4444); color:white; }
