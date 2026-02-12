@@ -478,10 +478,13 @@ function check(){
   if(!key) return;
 
   let found=false;
+data.forEach(function(x){
+  if(
+    normalize(x.code).includes(key) ||
+    (x.model && x.model.some(m => normalize(m).includes(key)))
+  ){
+    found = true;
 
-  data.forEach(function(x){
-    if(normalize(x.code).includes(key)){
-      found=true;
 
       const size = mmcMap[x.mmc] || "";
       const chip = detectChip(x.code);
