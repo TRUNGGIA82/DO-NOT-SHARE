@@ -361,7 +361,7 @@ const data = [
   {code:"KM2V8001CM-B707", vip:"VIP 7"},
   {code:"KM3V6001CA-B708", vip:"VIP 7"},
   {code:"HERSHELMADA-KEM", vip:"VIP 7"},
-  {code:"H9HP16AECMMDAR-KMM", vip:"VIP 7"},
+  {code:"H9HP16AECMMD-ARKEM", vip:"VIP 7"},
   {code:"KM3V6001CM-B705", vip:"VIP 7"},
   {code:"KM5V7001DM-B621", vip:"VIP 7"},
   {code:"KMDV6001DM-B620", vip:"VIP 7"},
