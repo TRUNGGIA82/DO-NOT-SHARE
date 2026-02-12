@@ -246,9 +246,8 @@ const data = [
   {code:"H9TQ17ABJTMCUR", vip:"VIP 4"},
   {code:"KMQ310013M-B419", vip:"VIP 4"},
   {code:"KMQ820013M-B419", vip:"VIP 4"},
-  {code:"KMQE10013M-B318", vip:"VIP 4"},
-  { 
-  code:"KMQE600013M-B318",
+   { 
+  code:"KMQE60013M-B318",
   vip:"VIP 4",
   model:["J4 PLUS"]
 },
