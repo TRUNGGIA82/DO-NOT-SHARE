@@ -18,12 +18,16 @@ body{
   min-height:100vh;
 }
 
-
 /* ===== CONTAINER ===== */
 .container{
+  flex:1;
+  width:100%;
   max-width:1100px;
-  margin:20px auto 40px;
+  margin:20px auto;
   padding:0 14px;
+
+  display:flex;
+  flex-direction:column;
 }
 
 /* ===== TITLE ===== */
@@ -50,26 +54,7 @@ input{
   box-sizing:border-box;
 }
 
-/* ===== BUTTON ===== */
-button{
-  width:100%;
-  padding:14px;
-  border-radius:50px;
-  border:none;
-  font-size:15px;
-  font-weight:800;
-  cursor:pointer;
-  background:linear-gradient(45deg,#FFD700,#ffb700);
-  color:black;
-  transition:0.2s;
-  box-sizing:border-box;
-}
-
-button:hover{
-  transform:scale(1.02);
-}
-
-/* ===== CHECK INLINE ===== */
+/* ===== CHECK BOX ===== */
 .check-inline{
   position:relative;
   width:100%;
@@ -96,13 +81,11 @@ button:hover{
 
 /* ===== GRID RESULT ===== */
 #out{
-  flex:1;
   display:grid;
   grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
   gap:14px;
   margin-top:20px;
 }
-
 
 /* ===== ITEM CARD ===== */
 .item{
@@ -124,16 +107,16 @@ button:hover{
   margin-top:6px;
 }
 
-/* ===== CLASS COLOR SYSTEM ===== */
+/* ===== CLASS COLORS ===== */
 
-/* CLASS 1 */
+/* 1 */
 .vip-1{
   background:#111;
   color:#fff;
   border:1px solid #333;
 }
 
-/* CLASS 2–4 */
+/* 2–4 */
 .vip-2,
 .vip-3,
 .vip-4{
@@ -141,42 +124,38 @@ button:hover{
   color:#ccc;
 }
 
-/* CLASS 5 */
+/* 5 */
 .vip-5{
   background:linear-gradient(90deg,#1e3c72,#2a5298);
   color:#fff;
-  font-weight:600;
 }
 
-/* CLASS 6 */
+/* 6 */
 .vip-6{
   background:linear-gradient(90deg,#2563eb,#3b82f6);
   color:#fff;
-  font-weight:600;
 }
 
-/* CLASS 7 */
+/* 7 */
 .vip-7{
   background:linear-gradient(90deg,#7c3aed,#a855f7);
   color:#fff;
-  font-weight:700;
 }
 
-/* CLASS 8 */
+/* 8 */
 .vip-8{
   background:linear-gradient(90deg,#db2777,#f43f5e);
   color:#fff;
-  font-weight:700;
 }
 
-/* CLASS 9 – đẹp nhất */
+/* 9 (đẹp nhất) */
 .vip-9{
   background:linear-gradient(90deg,#facc15,#f59e0b);
   color:#000;
   font-weight:800;
 }
 
-/* CLASS 10+ */
+/* 10+ */
 .vip-10,
 .vip-11,
 .vip-12,
@@ -187,7 +166,7 @@ button:hover{
 
 /* ===== INFO CARD ===== */
 .info-card{
-  margin-top:20px;
+  margin-top:auto;
   padding:18px;
   border-radius:18px;
   background:linear-gradient(145deg,#0e0e0e,#1a1a1a);
@@ -221,6 +200,7 @@ button:hover{
 }
 
 </style>
+
 
 
 </head>
