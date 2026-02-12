@@ -29,8 +29,7 @@ const data = [
   {code:"THGBMAG7A4JBA4R", mmc:"MMC1"},
   {code:"THGBMBG7C2KBAIL", mmc:"MMC1"},
   {code:"THGBMBG7D4KBAIW", mmc:"MMC1"},
-  {code:"THGBMFG7C2LBAIL", mmc:"MMC1"},
-  {code:"THGBMFG7CILBAIL", mmc:"MMC1"},
+    {code:"THGBMFG7CILBAIL", mmc:"MMC1"},
   {code:"THGBMHG7C2LBAIL", mmc:"MMC1"},
   {code:"THGBMSG7A2JBAIR", mmc:"MMC1"},
   {code:"THGBMSG7A4JBA4W", mmc:"MMC1"},
@@ -40,26 +39,14 @@ const data = [
   {code:"H28U62301AMR", mmc:"MMC2"},
   {code:"H28U64222MMR", mmc:"MMC2"},
   {code:"H2MU64122MAR", mmc:"MMC2"},
-  {code:"KLMBG2JENB-B041", mmc:"MMC2"},
-  { 
-  code:"KLMBG2JETD-B041", 
-  mmc:"MMC2",
-  model:["A530","J600","A600"]
-},
-
+    
   {code:"KLMBG4GEAC-B001", mmc:"MMC2"},
   {code:"KLMBG4GEND-B031", mmc:"MMC2"},
   {code:"KLMBG4WEBC-B031", mmc:"MMC2"},
   {code:"KLMBG4WEBC-C031", mmc:"MMC2"},
   {code:"KLMBG8FE4B-B001", mmc:"MMC2"},
   {code:"KLUBG4G1BD-E0B1", mmc:"MMC2"},
-  {code:"KLUBG4G1BD-E0B2", mmc:"MMC2"},
-  { 
-  code:"THGBMUG8C2LBAIL",
-  mmc:"MMC2",
-  model:["J7 PRIME"]
-},
-
+    
   {code:"KLUBG4G1BE-E0B1", mmc:"MMC2"},
   {code:"KLUBG4G1CE-B0B1", mmc:"MMC2"},
   {code:"KLUBG4WEBD-B031", mmc:"MMC2"},
@@ -89,12 +76,7 @@ const data = [
   {code:"H28S7Q302BMR", mmc:"MMC3"},
   {code:"H28U74301AMR", mmc:"MMC3"},
   {code:"H28U74303AMR", mmc:"MMC3"},
-  { 
-  code:"KLMCG2KETM-B041", 
-  mmc:"MMC3",
-  model:["A730"]
-},
-
+  
   {code:"KLMCG2KСТА-В041", mmc:"MMC3"},
   {code:"KLMCG2UCTA-B041", mmc:"MMC3"},
   {code:"KLMCG4JENB-B041", mmc:"MMC3"},
@@ -243,16 +225,9 @@ const data = [
   {code:"H9TQ17ABJTAC", vip:"VIP 4"},
   {code:"H9TQ17ABJTBC", vip:"VIP 4"},
   {code:"H9TQ17ABJTCC", vip:"VIP 4"},
-  {code:"H9TQ17ABJTMC", vip:"VIP 4"},
-  {code:"KMQ310013M-B419", vip:"VIP 4"},
-  {code:"KMQ310013B-B419", vip:"VIP 4"},
-  {code:"KMQ820013M-B419", vip:"VIP 4"},
-   { 
-  code:"KMQE60013M-B318",
-  vip:"VIP 4",
-  model:["J4 PLUS"]
-},
-
+    {code:"KMQ310013M-B419", vip:"VIP 4"},
+    {code:"KMQ820013M-B419", vip:"VIP 4"},
+   
   {code:"KMR310001M-B611", vip:"VIP 4"},
   {code:"KMR820001M-B609", vip:"VIP 4"},
   {code:"H9TQ17ADFTACUR", vip:"VIP 4"},
@@ -280,37 +255,21 @@ const data = [
   {code:"JZ090", vip:"VIP 4+"},
   {code:"H9AG8GDMNB-X113", vip:"VIP 5"},
   {code:"H9HQ53ADAMMD", vip:"VIP 5"},
-  {code:"H9TQ26ACLTMC", vip:"VIP 5"},
-  {code:"H9TQ26ADFTAC", vip:"VIP 5"},
-  {code:"H9TQ26ADFTBC", vip:"VIP 5"},
-  {code:"H9TQ27ADFTMC", vip:"VIP 5"},
-  {code:"H9TQ52ADFTAC", vip:"VIP 5"},
+      {code:"H9TQ26ADFTBC", vip:"VIP 5"},
+    {code:"H9TQ52ADFTAC", vip:"VIP 5"},
   {code:"KM4X60002M-B321", vip:"VIP 5"},
   {code:"KM5H80018M-B424", vip:"VIP 5"},
   {code:"KMDD60018M-B320", vip:"VIP 5"},
   {code:"KMDP60018M-B425", vip:"VIP 5"},
   {code:"KMDX10018M-B420", vip:"VIP 5"},
-  {code:"KMDX60018M-B425", vip:"VIP 5"},
-  {code:"KMGD6001BM-B421", vip:"VIP 5"},
-  {code:"KMGP6001BM-B514", vip:"VIP 5"},
-  { 
-  code:"KMGX6001BA-B514",
-  vip:"VIP 5",
-  model:["J6 PLUS"]
-},
-
+      {code:"KMGP6001BM-B514", vip:"VIP 5"},
+  
   {code:"KMGX6001BM-B514", vip:"VIP 5"},
   {code:"KMR21000BM-8809", vip:"VIP 5"},
   {code:"KMRC1000BM-B809", vip:"VIP 5"},
   {code:"KMRD60014M-B512", vip:"VIP 5"},
-  {code:"KMRX1000BM-B614", vip:"VIP 5"},
-  {code:"KMRX10014M-B614", vip:"VIP 5"},
-  { 
-  code:"KMRX60014M-B614",
-  vip:"VIP 5",
-  model:["A6 PLUS"]
-},
-
+    {code:"KMRX10014M-B614", vip:"VIP 5"},
+  
   {code:"SDADA4CR-64G", vip:"VIP 5"},
   {code:"SDADA4DR-64G", vip:"VIP 5"},
   {code:"JZ049", vip:"VIP 5"},
@@ -335,9 +294,7 @@ const data = [
   {code:"4CR-128G", vip:"VIP 6"},
   {code:"4DR-128G", vip:"VIP 6"},
   {code:"3IC64GB", vip:"VIP 6"},
-  {code:"KMRH60014M-B614", vip:"VIP 6"},
-  {code:"KMRP60014M-B614", vip:"VIP 6"},
-  {code:"KMWC10017M-B812", vip:"VIP 6"},
+      {code:"KMWC10017M-B812", vip:"VIP 6"},
   {code:"H9HQ53ACPMMD", vip:"VIP 6"},
   {code:"KMDH6001DA-B422", vip:"VIP 6"},
   {code:"KMDH6001DM-B422", vip:"VIP 6"},
@@ -348,8 +305,7 @@ const data = [
   {code:"JZ177", vip:"VIP 6"},
   {code:"JZ128", vip:"VIP 6"},
   {code:"JZ479", vip:"VIP 6"},
-  {code:"JZ186", vip:"VIP 6"},
-  {code:"JZ114", vip:"VIP 6+ (Sam Sung V7 )"},
+    {code:"JZ114", vip:"VIP 6+ (Sam Sung V7 )"},
   {code:"JZ484", vip:"VIP 6+ (Sam Sung V7 )"},
   {code:"KGAM9001PM-B814", vip:"VIP 6+ (Sam Sung V7 )"},
   {code:"KM8L9001JM-B624", vip:"VIP 6+ (Sam Sung V7 )"},
@@ -359,10 +315,8 @@ const data = [
   {code:"JZ187", vip:"VIP 7"},
   {code:"KM2V7001CM-B706", vip:"VIP 7"},
   {code:"KM2V8001CM-B707", vip:"VIP 7"},
-  {code:"KM3V6001CA-B708", vip:"VIP 7"},
-  {code:"HERSHELMADA-KEM", vip:"VIP 7"},
-  {code:"H9HP16AECMMD-ARKEM", vip:"VIP 7"},
-  {code:"KM3V6001CM-B705", vip:"VIP 7"},
+    {code:"HERSHELMADA-KEM", vip:"VIP 7"},
+    {code:"KM3V6001CM-B705", vip:"VIP 7"},
   {code:"KM5V7001DM-B621", vip:"VIP 7"},
   {code:"KMDV6001DM-B620", vip:"VIP 7"},
   {code:"KMDV6001DA-B620", vip:"VIP 7"},
@@ -410,4 +364,103 @@ const data = [
   {code:"H9RT2GGA65", vip:"VIP 12"},
   {code:"KMJIA001RM-BC07", vip:"VIP 12"},
   {code:"H9RT2G7M75", vip:"VIP 13"},
+
+/* ===== CLEAN MERGED SECTION ===== */
+
+{code:"THGBMFG7C2LBAIL", mmc:"MMC1", model:["SAMSUNG A510 16GB"]},
+
+{code:"KLMBG2JETD-B041", mmc:"MMC2", model:[
+  "SAMSUNG A530 32GB",
+  "SAMSUNG J600 32GB",
+  "SAMSUNG A600 32GB"
+]},
+
+{code:"KLMBG2JENB-B041", mmc:"MMC2", model:[
+  "SAMSUNG A520 32GB",
+  "SAMSUNG A720 32GB"
+]},
+
+{code:"THGBMUG8C2LBAIL", mmc:"MMC2", model:[
+  "SAMSUNG J7 PRIME 32GB"
+]},
+
+{code:"KLUBG4G1BD-E0B2", mmc:"MMC2", model:[
+  "SAMSUNG NOTE 5 32GB"
+]},
+
+{code:"KLMCG2KETM-B041", mmc:"MMC3", model:[
+  "SAMSUNG A730 64GB"
+]},
+
+{code:"KMQE60013M-B318", vip:"VIP 4", model:[
+  "SAMSUNG J3 PRO 16GB",
+  "SAMSUNG J400 16GB",
+  "SAMSUNG J4 PLUS 16GB",
+  "OPPO A37 16GB"
+]},
+
+{code:"KMQ310013B-B419", vip:"VIP 4", model:[
+  "SAMSUNG J510 16GB"
+]},
+
+{code:"H9TQ17ABJTMC", vip:"VIP 4", model:[
+  "OPPO A51 16GB"
+]},
+
+{code:"KMRX60014M-B614", vip:"VIP 5", model:[
+  "SAMSUNG A6 PLUS 32GB",
+  "SAMSUNG J7 PLUS 32GB"
+]},
+
+{code:"KMGX6001BA-B514", vip:"VIP 5", model:[
+  "SAMSUNG J6 PLUS 32GB"
+]},
+
+{code:"H9TQ27ADFTMC", vip:"VIP 5", model:[
+  "OPPO A5S 32GB"
+]},
+
+{code:"KMDX60018M-B425", vip:"VIP 5", model:[
+  "SAMSUNG A21S 32GB"
+]},
+
+{code:"KMRX1000BM-B614", vip:"VIP 5", model:[
+  "OPPO F1S 32GB"
+]},
+
+{code:"KMGD6001BM-B421", vip:"VIP 5", model:[
+  "OPPO F5 32GB",
+  "VIVO Y91C 32GB"
+]},
+
+{code:"H9TQ26ACLTMC", vip:"VIP 5", model:[
+  "OPPO F5 32GB"
+]},
+
+{code:"H9TQ26ADFTAC", vip:"VIP 5", model:[
+  "OPPO F5 32GB"
+]},
+
+{code:"JZ186", vip:"VIP 6", model:[
+  "OPPO A15 64GB"
+]},
+
+{code:"KMRP60014M-B614", vip:"VIP 6", model:[
+  "SAMSUNG A20S 64GB"
+]},
+
+{code:"KMRH60014M-B614", vip:"VIP 6", model:[
+  "OPPO F1S 64GB"
+]},
+
+{code:"KM3V6001CA-B708", vip:"VIP 7", model:[
+  "SAMSUNG A12 128GB",
+  "SAMSUNG M12 128GB"
+]},
+
+{code:"H9HP16AECMMD-ARKEM", vip:"VIP 7", model:[
+  "OPPO A92 128GB",
+  "OPPO A52 128GB"
+]},
+
 ];
