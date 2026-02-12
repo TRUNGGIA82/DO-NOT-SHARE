@@ -276,12 +276,13 @@ z-index:9999;
   <input id="loginPass" type="password" placeholder="Nhập Password"
   style="width:100%;padding:12px 45px 12px 12px;border-radius:10px;border:none;background:#cfd6df;color:black;box-sizing:border-box;">
 
-  <span id="eyeIcon" onclick="togglePass()" 
+  <span id="eyeIcon"
   style="position:absolute;right:14px;top:50%;transform:translateY(-50%);
   cursor:pointer;font-size:18px;color:#333;font-weight:bold;">
     👁
   </span>
 </div>
+
 
 
   <button onclick="secureLogin()" 
@@ -621,6 +622,28 @@ ${x.model?`
 q.addEventListener("keydown",function(e){
   if(e.key==="Enter") check();
 });
+// ===== TOGGLE PASSWORD =====
+document.addEventListener("DOMContentLoaded", function(){
+
+  const passInput = document.getElementById("loginPass");
+  const eyeIcon = document.getElementById("eyeIcon");
+
+  if(passInput && eyeIcon){
+    eyeIcon.addEventListener("click", function(){
+
+      if(passInput.type === "password"){
+        passInput.type = "text";
+        eyeIcon.textContent = "🙈";
+      } else {
+        passInput.type = "password";
+        eyeIcon.textContent = "👁";
+      }
+
+    });
+  }
+
+});
+
 </script>
 
 </body>
