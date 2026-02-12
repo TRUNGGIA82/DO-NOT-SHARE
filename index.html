@@ -12,7 +12,12 @@ body{
   font-family:Segoe UI,Roboto,Arial;
   background:radial-gradient(circle at top,#111,#000);
   color:#f1f5f9;
+
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
 }
+
 
 /* ===== CONTAINER ===== */
 .container{
@@ -91,11 +96,13 @@ button:hover{
 
 /* ===== GRID RESULT ===== */
 #out{
+  flex:1;
   display:grid;
   grid-template-columns:repeat(auto-fill, minmax(280px,1fr));
   gap:14px;
   margin-top:20px;
 }
+
 
 /* ===== ITEM CARD ===== */
 .item{
