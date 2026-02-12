@@ -479,11 +479,20 @@ function check(){
 
   let found=false;
 data.forEach(function(x){
-  if(
-    normalize(x.code).includes(key) ||
-    (x.model && x.model.some(m => normalize(m).includes(key)))
-  ){
+
+  let matchCode = normalize(x.code).includes(key);
+
+  let matchModel = false;
+
+  if (x.model && Array.isArray(x.model)) {
+    matchModel = x.model.some(function(m){
+      return normalize(m).includes(key);
+    });
+  }
+
+  if (matchCode || matchModel) {
     found = true;
+
 
 
       const size = mmcMap[x.mmc] || "";
